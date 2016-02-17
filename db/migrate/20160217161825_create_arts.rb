@@ -1,10 +1,9 @@
 class CreateArts < ActiveRecord::Migration
   def change
     create_table :arts do |t|
-      t.string :name
+      t.references :category, index: true, foreign_key: true
+      t.string :title
       t.text :description
-      t.float :price
-      t.string :artist_name
 
       t.timestamps null: false
     end
