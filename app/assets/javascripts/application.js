@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require plugins
-//= require functions
+// require turbolinks
+// require plugins
+// require functions
 // require_tree .
