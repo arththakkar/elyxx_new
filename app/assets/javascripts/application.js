@@ -15,4 +15,4 @@
 // require turbolinks
 //= require plugins
 //= require functions
-// require_tree .
+//= require_tree .
