@@ -23,6 +23,43 @@
 		<%= yield %>
 		<%= render "layouts/footer" %>
 	</div>
+
+	<div id="login" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	    <!-- Modal content-->
+  		<div class="modal-content">
+    		<div class="panel panel-default divcenter noradius noborder" style="max-width: 400px;">
+					<div class="panel-body" style="padding: 40px;">
+						<!-- <form id="login-form" name="login-form" class="nobottommargin" action="#" method="post"> 
+						-->
+						<%= form_for User.new, url: user_session_path, class: "nobottommargin" do |f| %>
+							<h3>Login to your Account</h3>
+
+							<div class="col_full">
+								<label for="login-form-username">Email:</label>
+								<!-- <input type="text" id="login-form-username" name="login-form-username" value="" class="form-control not-dark"> -->
+								<%= f.text_field :email, class: "form-control not-dark", placeholder: "abc@example.com", :hide_label => true %>
+							</div>
+
+							<div class="col_full">
+								<label for="login-form-password">Password:</label>
+								<!-- <input type="password" id="login-form-password" name="login-form-password" value="" class="form-control not-dark"> -->
+								<%= f.password_field :password, class: "form-control not-dark", placeholder: "Password", :hide_label => true %>
+							</div>
+
+							<div class="col_full nobottommargin">
+								<%= f.submit "Login", class: "button button-3d button-black nomargin" %>
+								<!-- <button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login">Login</button> -->
+								<a href="#" class="fright">Forgot Password?</a>
+							</div>
+						<!-- </form> -->
+						<% end %>
+					</div>
+				</div>
+  		</div>
+	  </div>
+	</div>
+
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
