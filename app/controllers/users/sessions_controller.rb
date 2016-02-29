@@ -8,11 +8,29 @@ class Users::SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
   def create
-    if params[:email].present? && params[:password].present?
+    if params[:user][:email].present? && params[:user][:password].present?
+      user = User.find_by_email(params[:user][:email])
+      if user.present?
+        if user.valid_password?(params[:user][:password])
+          sign_in user
+          flash[:success] = "Signed In Successfully."
+        else
+          flash[:danger] = "Oh! Password is Incorrect."
+        end
+      else
+        flash[:danger] = "Oops! We don't have anyone registered with this Email."
+      end
     else
-      flash[:danger] = "Oops!! Username or Password is incorrect."
+      flash[:danger] = "Username and Password can't be blank."
     end
-    super
+    redirect_to root_path
+    # super
+  end
+
+  def destroy
+    sign_out current_user
+    flash[:success] = "User Signed Out Successfully."
+    redirect_to root_path
   end
 
   # DELETE /resource/sign_out
