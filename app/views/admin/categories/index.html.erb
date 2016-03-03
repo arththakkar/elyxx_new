@@ -1,0 +1,55 @@
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>Categories</h1>
+		<span>Manage Categories</span>
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Admin</a></li>
+			<li class="active">Categories</li>
+		</ol>
+	</div>
+</section>
+<section id="content">
+	<div class="content-wrap">
+		<div class="container clearfix">
+			<div class="row">
+				<%= render "shared/error_messages" %>
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-heading padding-20">
+							<%= link_to "<i class='icon-plus'></i> Add".html_safe, new_admin_category_path,class: "btn btn-success pull-right margin-top-neg-15" %>
+						</div>
+					  <div class="panel-body">
+					  	<% if @categories.present? %>
+						  	<table class="table table-striped">
+								  <thead>
+									<tr>
+									  <th style="width: 80%;">Category Name</th>
+									  <th>Actions</th>
+									  <th></th>
+									</tr>
+								  </thead>
+								  <tbody>
+										<% @categories.each do |category| %>
+											<tr>
+												<td><%= category.name %></td>
+												<td>
+													<%= link_to "<i class='icon-pencil'></i>".html_safe, edit_admin_category_path(category) %>
+												</td>
+												<td>
+													<%= link_to "<i class='icon-trash'></i>".html_safe, admin_category_path(category), method: :delete, :data => {:confirm => "Are you sure?"} %>
+												</td>
+											</tr>
+										<% end %>
+								  </tbody>
+								</table>
+							<% else %>
+								<p><center>No Categories Found.</center></p>
+							<% end %>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

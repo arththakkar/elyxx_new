@@ -12,27 +12,17 @@
 			<!-- Primary Navigation
 			============================================= -->
 			<nav id="primary-menu">
-				<ul class="sf-js-enabled" style="touch-action: pan-y;">
+				<ul>
 					<li><a href="<%= root_path %>"><div>Home</div></a></li>
-					<li class="sub-menu">
-						<a href="<%= arts_path %>" class="sf-with-ul"><div>Art Gallery</div></a>
-						<ul>
-							<li><a href="#"><div>Category 1</div></a></li>
-							<li><a href="#"><div>Category 2</div></a></li>
-							<li><a href="#"><div>Category 3</div></a></li>
-							<li><a href="#"><div>Category 4</div></a></li>
-							<li><a href="#"><div>Category 5</div></a></li>
-						</ul>
+					<li>
+						<a href="<%= arts_path %>"><div>Art Gallery</div></a>
 					</li>
 					<% if current_user.present? %>
-						<li class="sub-menu">
-						<a href="#" class="sf-with-ul"><div>Admin</div></a>
+						<li>
+						<a href="#"><div>Admin</div></a>
 						<ul>
-							<li><a href="#"><div>Category 1</div></a></li>
-							<li><a href="#"><div>Category 2</div></a></li>
-							<li><a href="#"><div>Category 3</div></a></li>
-							<li><a href="#"><div>Category 4</div></a></li>
-							<li><a href="#"><div>Category 5</div></a></li>
+							<li><a href="<%= admin_categories_path %>"><div>Categories</div></a></li>
+							<li><a href="#"><div>Arts</div></a></li>
 						</ul>
 					</li>
 						<li><%= link_to "<div>Sign Out</div>".html_safe, destroy_user_session_path, method: :delete %></li>
