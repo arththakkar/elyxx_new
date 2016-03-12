@@ -1,0 +1,46 @@
+<section id="page-title">
+	<div class="container clearfix">
+		<h1>Contact Us</h1>
+		<span>About Us / Feedback</span>
+	</div>
+	<div class="page-title-border"></div>
+</section>
+
+<section id="content">
+	<div class="content-wrap">
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default shadow">
+					  <div class="panel-heading blue-stripe">Goals and Objectives</div>
+					  <div class="panel-body">
+					  	<blockquote class="quote">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, maiores esse temporibus accusantium quas soluta quis sed rerum. Sapiente, culpa fugit sit est laboriosam odit.</p>
+							</blockquote>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default shadow">
+					  <div class="panel-heading blue-stripe">Write us what's on your mind?</div>
+					  <div class="panel-body">
+					  	<%= form_tag "contact", url: contact_path, method: :post, class: "form-horizontal pad-5px" do %>
+					  		<div class="form-group">
+							    <label>Suggestions / Questions :</label>
+							    <%= text_area "suggestion", "", rows: 5, class: "form-control", placeholder: "Tell us what do you think and make your experience better.", required: true %>
+							  </div>
+							  <div class="form-group">
+							    <label>Email :</label>
+							    <%= text_field_tag "email", "", class: "form-control", placeholder: "abc@example.com", required: true %>
+							  </div>
+							  <div class="form-group">
+							  	<%= submit_tag "Send Feedback", class: "button button-medium button-rounded" %>
+							  </div>
+					  	<% end %>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

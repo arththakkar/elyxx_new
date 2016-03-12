@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'dashboard#index'
+  get 'contact_us', to: 'dashboard#contact_us', as: :contact_us
+  post 'contact', to: 'dashboard#contact', as: :contact
 
   Rails.application.routes.draw do
     devise_for :users, controllers: {
