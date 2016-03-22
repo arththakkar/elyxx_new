@@ -4,6 +4,7 @@ class ArtsController < ApplicationController
   end
 
   def show
+  	logger.warn("====================================================Arts Show")
   	@category = Category.find(params[:id])
   end
 end
