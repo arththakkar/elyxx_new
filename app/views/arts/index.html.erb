@@ -9,62 +9,47 @@
 <section id="content">
 	<div class="content-wrap">
 		<div class="container clearfix">
+
 			<div class="row">
-				<% @categories.each_with_index do |category, index| %>
-					<div class="col-md-3">
-						<article class="portfolio-item pf-graphics pf-illustrations">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false">
-									<div class="flexslider">
-										<div class="flex-viewport" style="overflow: hidden; position: relative;">
-											<div class="slider-wrap" style="width: 1200%; transition-duration: 0s; transform: translate3d(-276px, 0px, 0px);">
-												<div class="slide clone" aria-hidden="true" style="width: 276px; float: left; display: block;">
-													<a href="#">
-														<img src="masonry/4/6-3.jpg" alt="Category 1" draggable="false">
-													</a>
-												</div>
-												<div class="slide flex-active-slide" style="width: 276px; float: left; display: block;">
-													<a href="#">
-														<img src="masonry/4/6.jpg" alt="Shake It" draggable="false">
-													</a>
-												</div>
-												<div class="slide" style="width: 276px; float: left; display: block;">
-													<a href="#">
-														<img src="masonry/4/6-1.jpg" alt="Shake It" draggable="false">
-													</a>
-												</div>
-												<div class="slide" style="width: 276px; float: left; display: block;">
-													<a href="">
-														<img src="masonry/4/6-2.jpg" alt="Shake It" draggable="false">
-													</a>
-												</div>
-												<div class="slide" style="width: 276px; float: left; display: block;">
-													<a href="#">
-														<img src="masonry/4/6-3.jpg" alt="Shake It" draggable="false">
-													</a>
-												</div>
-												<div class="slide clone" aria-hidden="true" style="width: 276px; float: left; display: block;">
-													<a href="#">
-														<img src="masonry/4/6.jpg" alt="Shake It" draggable="false">
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="portfolio-desc">
-								<h3><a href="<%= art_path(category) %>"><i class='icon-image'></i> <%= category.name %></a></h3>
-								<!-- <span><a href="#">Illustrations</a>, <a href="#">Graphics</a></span> -->
-							</div>
-						</article>
-					</div>
-					<% if index != 0 and (index % 4) == 0 %>
-						</div>
-						<div class="row">
-					<% end %>
-				<% end %>
+				<div class="col-md-2">
+					<%= link_to "Category 1", art_path(Category.first.id), class: "font-size-30" %>
+				</div>
+				<div class="col-md-8">
+				</div>
+				<div class="col-md-2">
+					<%= link_to "Category 5", art_path(Category.first.id), class: "font-size-30" %>
+				</div>
 			</div>
+
+			<br /><br /><br />
+
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-2">
+					<%= link_to "Category 2", art_path(Category.first.id), class: "font-size-30" %>
+				</div>
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-2">
+					<%= link_to "Category 4", art_path(Category.first.id), class: "font-size-30" %>
+				</div>
+				<div class="col-md-2">
+				</div>
+			</div>
+
+			<br /><br /><br />
+
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4 center">
+					<%= link_to "Category 3", art_path(Category.first.id), class: "font-size-30" %>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
