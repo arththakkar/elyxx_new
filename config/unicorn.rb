@@ -1,5 +1,5 @@
 
-@dir = "/sites/elyxx/"
+@dir = "/home/rails/sites/elyxx/"
 worker_processes 2
 
 working_directory @dir
