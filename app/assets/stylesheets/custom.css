@@ -45,9 +45,13 @@
 }
 
 .font-size-30{
-    font-size: 30px;
+    font-size: 21px;
 }
 
 .new-fonts{
     font-family: 'Raleway', sans-serif;
+}
+
+.my-link:hover{
+    color: #133783;
 }

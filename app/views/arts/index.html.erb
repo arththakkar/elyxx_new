@@ -1,9 +1,11 @@
-<section id="page-title">
+<section id="slider" class="boxed-slider">
 	<div class="container clearfix">
-		<h1>Art Gallery</h1>
-		<span>What will you display?</span>
+		<%= render "shared/error_messages" %>
+		
+		<div class="home-page-title">
+			<h1>Choose</h1>
+		</div>
 	</div>
-	<div class="page-title-border"></div>
 </section>
 
 <section id="content">
@@ -12,12 +14,12 @@
 
 			<div class="row">
 				<div class="col-md-2">
-					<%= link_to "Category 1", art_path(Category.first.id), class: "font-size-30" %>
+					<%= link_to "|WhImSiCaL|", art_path(Category.first.id), class: "font-size-30 my-link" %>
 				</div>
 				<div class="col-md-8">
 				</div>
 				<div class="col-md-2">
-					<%= link_to "Category 5", art_path(Category.first.id), class: "font-size-30" %>
+					<%= link_to "|*Inedible*|", art_path(Category.first.id), class: "font-size-30 my-link" %>
 				</div>
 			</div>
 
@@ -27,12 +29,12 @@
 				<div class="col-md-2">
 				</div>
 				<div class="col-md-2">
-					<%= link_to "Category 2", art_path(Category.first.id), class: "font-size-30" %>
+					<%= link_to "|INSCRUTABLE?|", art_path(Category.first.id), class: "font-size-30 my-link" %>
 				</div>
 				<div class="col-md-4">
 				</div>
 				<div class="col-md-2">
-					<%= link_to "Category 4", art_path(Category.first.id), class: "font-size-30" %>
+					<%= link_to "|~FRACTAL~|", art_path(Category.first.id), class: "font-size-30 my-link" %>
 				</div>
 				<div class="col-md-2">
 				</div>
@@ -44,7 +46,7 @@
 				<div class="col-md-4">
 				</div>
 				<div class="col-md-4 center">
-					<%= link_to "Category 3", art_path(Category.first.id), class: "font-size-30" %>
+					<%= link_to "|IMPERIOUS!|", art_path(Category.first.id), class: "font-size-30 my-link" %>
 				</div>
 				<div class="col-md-4">
 				</div>
