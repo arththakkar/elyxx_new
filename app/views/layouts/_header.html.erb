@@ -11,21 +11,21 @@
 
 			<!-- Primary Navigation
 			============================================= -->
-			<nav id="primary-menu">
+			<nav id="primary-menu" style="margin-right: 35%;">
 				<ul>
-					<li><a href="<%= root_path %>"><div>Home</div></a></li>
+					<li><a href="<%= root_path %>" class="new-fonts"><div>Home</div></a></li>
 					<li>
-						<a href="<%= arts_path %>"><div>Art Gallery</div></a>
+						<a href="<%= arts_path %>" class="new-fonts"><div>Gallery</div></a>
 					</li>
 					<li>
-						<a href="<%= contact_us_path %>"><div>Contact Us</div></a>
+						<a href="<%= contact_us_path %>" class="new-fonts"><div>Contact</div></a>
 					</li>
 					<% if current_user.present? %>
 						<li>
-						<a href="#"><div>Admin</div></a>
+						<a href="#" class="new-fonts"><div>Admin</div></a>
 						<ul>
-							<li><a href="<%= admin_categories_path %>"><div>Categories</div></a></li>
-							<li><a href="#"><div>Arts</div></a></li>
+							<li><a href="<%= admin_categories_path %>" class="new-fonts"><div>Categories</div></a></li>
+							<li><a href="#" class="new-fonts"><div>Arts</div></a></li>
 						</ul>
 					</li>
 						<li><%= link_to "<div>Sign Out</div>".html_safe, destroy_user_session_path, method: :delete %></li>
