@@ -9,7 +9,9 @@ Rails.application.routes.draw do
     }
   end
 
-  resources :arts
+  resources :arts do
+    resources :images
+  end
 
   namespace :admin do
     resources :categories
