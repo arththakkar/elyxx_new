@@ -1091,10 +1091,10 @@ body.stretched #header.full-header .container {
 	line-height: 100px;
 	padding: 0 15px;
 	color: #444;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 18px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-family: 'Raleway', sans-serif;
 	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;

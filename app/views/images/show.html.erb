@@ -1,3 +1,20 @@
+<section id="slider" class="boxed-slider">
+  <div class="container clearfix">
+    <%= render "shared/error_messages" %>
+    
+    <div class="home-page-title">
+      <h1>EXXPERIENCE</h1>
+    </div>
+  </div>
+</section>
+<section id="content" style="margin-bottom: 0px;">
+  <div class="content-wrap">
+    <div class="container clearfix center">
+      <%= image_tag "http://mvp.elyxx.com/images/#{params[:id]}.jpg", height: "400px", width: "800px" %>
+    </div>
+  </div>
+</section>
+
 <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript">
@@ -49,7 +66,7 @@ function onInitError() {
 }
 
 $('.castme').click(function(){
-  image_name = $(this).data("image-id");
+  image_name = <%= params[:id] %>
   launchApp();
 });
 
