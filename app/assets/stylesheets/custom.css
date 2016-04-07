@@ -55,3 +55,8 @@
 .my-link:hover{
     color: #133783;
 }
+
+.footer-custom{
+    border-top: 3px solid #133783 !important;
+    height: 40%;
+}

@@ -1092,7 +1092,7 @@ body.stretched #header.full-header .container {
 	padding: 0 15px;
 	color: #444;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
@@ -11665,8 +11665,8 @@ button.toast-close-button {
 .footer-widgets-wrap .col_five_sixth { margin-bottom: 0; }
 
 #copyrights {
-	padding: 40px 0;
-	background-color: #DDD;
+	padding: 20px 0;
+	background-color: #fff;
 	font-size: 14px;
 	line-height: 1.8;
 }
