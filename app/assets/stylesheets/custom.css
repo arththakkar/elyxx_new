@@ -60,3 +60,21 @@
     border-top: 3px solid #133783 !important;
     height: 40%;
 }
+
+#text{
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  /*font-weight: bold;*/
+  top: 175px;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(153,153,153,0.60);
+}
+
+.extra-top{
+  top: 390px !important;
+}
