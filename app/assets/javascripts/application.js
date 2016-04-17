@@ -15,4 +15,5 @@
 // require turbolinks
 //= require plugins
 //= require functions
+//= require custom
 // require_tree .

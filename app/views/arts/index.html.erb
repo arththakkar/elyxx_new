@@ -8,50 +8,33 @@
 	</div>
 </section>
 
-<section id="content">
-	<div class="content-wrap">
-		<div class="container clearfix">
+<section id="content" style="margin-bottom: 0px;">
+  <div class="content-wrap">
+  	<div class="container clearfix">
+			<div class="col_full clearfix">
 
-			<div class="row">
-				<div class="col-md-2">
-					<%= link_to "|WhImSiCaL|", art_path(Category.first.id), class: "font-size-30 my-link" %>
+				<div class="masonry-thumbs col-3" data-big="2" style="margin-right: -1px; position: relative; height: 855.702px;">
+					<a href="<%= art_path(Category.first.id) %>" style="width: 380px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="/white_bg.jpg" alt="Gallery Thumb 1" style="opacity: 1;">
+						<span id="text-index"><span>Red</span></span>
+					</a>
+					<a href="<%= art_path(Category.first.id) %>" style="width: 760px; position: absolute; left: 380px; top: 0px;"><img class="image_fade" src="/white_bg.jpg" alt="Gallery Thumb 2" style="opacity: 1;">
+					<span id="text-index" class="extra-top-index"><span>Blue</span></span>
+					</a>
+					<a href="<%= art_path(Category.first.id) %>" style="width: 380px; position: absolute; left: 0px; top: 285px;"><img class="image_fade" src="/white_bg.jpg" alt="Gallery Thumb 3" style="opacity: 1;">
+						<span id="text-index"><span>Green <i class="fa fa-play pull-right"></i></span></span>
+					</a>
+					<a href="<%= art_path(Category.first.id) %>" style="width: 380px; position: absolute; left: 380px; top: 570px;"><img class="image_fade" src="/white_bg.jpg" alt="Gallery Thumb 4">
+					<span id="text-index"><span>Cyan</span></span>
+					</a>
+					<a href="<%= art_path(Category.first.id) %>" style="width: 380px; position: absolute; left: 760px; top: 570px;"><img class="image_fade" src="/white_bg.jpg" alt="Gallery Thumb 5">
+					<span id="text-index"><span>Gray</span></span>
+					</a>
+					<a href="<%= art_path(Category.first.id) %>" style="width: 380px; position: absolute; left: 0px; top: 570px;"><img class="image_fade" src="/white_bg.jpg" alt="Gallery Thumb 6">
+					<span id="text-index"><span>White</span></span>
+					</a>
 				</div>
-				<div class="col-md-8">
-				</div>
-				<div class="col-md-2">
-					<%= link_to "|*Inedible*|", art_path(Category.first.id), class: "font-size-30 my-link" %>
-				</div>
+
 			</div>
-
-			<br /><br /><br />
-
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-					<%= link_to "|INSCRUTABLE?|", art_path(Category.first.id), class: "font-size-30 my-link" %>
-				</div>
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-2">
-					<%= link_to "|~FRACTAL~|", art_path(Category.first.id), class: "font-size-30 my-link" %>
-				</div>
-				<div class="col-md-2">
-				</div>
-			</div>
-
-			<br /><br /><br />
-
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4 center">
-					<%= link_to "|IMPERIOUS!|", art_path(Category.first.id), class: "font-size-30 my-link" %>
-				</div>
-				<div class="col-md-4">
-				</div>
-			</div>
-
 		</div>
 	</div>
 </section>

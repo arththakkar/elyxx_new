@@ -75,6 +75,24 @@
   background: rgba(153,153,153,0.60);
 }
 
+#text-index{
+  z-index: 100;
+  position: absolute;
+  color: #133783;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  /*font-weight: bold;*/
+  top: 2px;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  /*background: rgba(153,153,153,0.60);*/
+}
+
 .extra-top{
-  top: 390px !important;
+  top: 389px !important;
+}
+
+.extra-top-index{
+  top: 210px !important;
 }
