@@ -1,6 +1,6 @@
 $(document).ready(function(){
 function add_current_class(){
-	alert("Hi");
+	// alert("Hi");
 	var selector = '#primary-menu ul li';
 
 	$(selector).on('click', function(){
