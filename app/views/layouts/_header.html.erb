@@ -11,15 +11,15 @@
 
 			<!-- Primary Navigation
 			============================================= -->
-			<nav id="primary-menu" style="margin-right: 35%;">
+			<nav id="primary-menu" style="margin-right: 40%;">
 				<ul>
 					<li><a href="<%= root_path %>" class="new-fonts"><div>Home</div></a></li>
 					<li>
 						<a href="<%= arts_path %>" class="new-fonts"><div>Gallery</div></a>
 					</li>
-					<li>
-						<a href="<%= contact_us_path %>" class="new-fonts"><div>Contact</div></a>
-					</li>
+					<!-- <li>
+						<a href="<%#= contact_us_path %>" class="new-fonts"><div>Contact</div></a>
+					</li> -->
 					<% if current_user.present? %>
 						<li>
 						<a href="#" class="new-fonts"><div>Admin</div></a>
