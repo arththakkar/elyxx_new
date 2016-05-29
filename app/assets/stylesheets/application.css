@@ -10,22 +10,13 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- * require_tree .
- *= require bootstrap
- *= require style
- *= require dark
- *= require font-icons
- *= require animate
- *= require magnific-popup
- *= require responsive
- *= require custom
+ 
  *= require_self
+ *= require animate.min
+ *= require bootstrap.min
+ *= require font-awesome.min
+ *= require lightbox
+ *= require main
+ *= require prettyPhoto
+ *= require responsive
  */
-
-.padding-20{
-	padding: 20px;
-}
-
-.margin-top-neg-15{
-	margin-top: -17px;
-}
