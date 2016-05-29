@@ -1,24 +1,54 @@
-<section id="slider" class="boxed-slider">
-  <div class="container clearfix">
-    <%= render "shared/error_messages" %>
-    
-    <div class="home-page-title">
-      <h1>EXXPERIENCE</h1>
+<section id="page-breadcrumb">
+    <div class="vertical-center sun">
+         <div class="container">
+            <div class="row">
+                <div class="action">
+                    <div class="col-sm-12">
+                        <h1 class="title">EXXPERIENCE</h1>
+                       <!-- <p>Be Creative</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
-<section id="content" style="margin-bottom: 0px;">
-  <div class="content-wrap">
-    <div class="container clearfix center">
-      <%= image_tag "/images/Full/#{params[:id]}.jpg", height: "400px", width: "800px" %>
+<% image_name = case params[:id]
+                when "1"
+                  "|| CLICK HERE ||"
+                when "2"
+                  "|| CAN'T LOOSE ||"
+                when "3"
+                  "|| BETTER IDEA ||"
+                when "4"
+                  "|| OH MY!! ||"
+                when "5"
+                  "|| LAST AND BEST ||"
+                when "6"
+                  "|| CLICK HERE ||"
+                  end %>
+<section id="portfolio-information" class="padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <%= image_tag "/images/Full/#{params[:id]}.jpg", class: "img-responsive", alt: "" %>
+            </div>
+            <div class="col-sm-6">
+                <div class="project-name overflow">
+                    <h2 class="bold"><%= image_name %> </h2>
+                    <!-- <ul class="nav navbar-nav navbar-default">
+                        <li><a href="#"><i class="fa fa-clock-o"></i>May 29,2014</a></li>
+                    </ul> -->
+                </div>
+                <div class="project-info overflow">
+                    <!-- <h3>UEFA Champions</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elimttis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p> -->
+                    <p><a href="#" class="btn btn-common castme">PROJECT TO SCREEN</a></p>
+                </div>
+
+
+            </div>
+        </div>
     </div>
-    <div class="center">
-      <%= link_to "Project To Screen", "#", class: "button button-xlarge button-rounded castme" %>
-    </div>
-    <div class="center">
-      <%= link_to "<i class='icon-reply'></i>".html_safe, art_path(params[:art_id]), title: "Back To Gallery", style: "color: black;" %>
-    </div>
-  </div>
 </section>
 
 <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>

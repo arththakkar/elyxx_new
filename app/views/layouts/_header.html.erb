@@ -17,8 +17,8 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="images.html">Images</a></li>
+                        <li class="<%= cp(root_path) %>"><a href="<%= root_path %>">Home</a></li>
+                        <li class="<%= cp(arts_path) %>"><a href="<%= arts_path %>">Gallery</a></li>
                        <!-- <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="aboutus.html">About</a></li>
@@ -34,14 +34,14 @@
 
                     </ul>
                 </div>
-                <div class="search">
+                <!-- <div class="search">
                     <form role="form">
                         <i class="fa fa-search"></i>
                         <div class="field-toggle">
                             <input type="text" class="search-form" autocomplete="off" placeholder="Search">
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>

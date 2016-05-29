@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.isotope.min
 //= require bootstrap.min
 //= require lightbox.min
 //= require wow.min
