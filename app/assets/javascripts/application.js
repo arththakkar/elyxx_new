@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-// require turbolinks
-//= require plugins
-//= require functions
-//= require custom
+//= require bootstrap.min
+//= require lightbox.min
+//= require wow.min
+//= require main
 // require_tree .
