@@ -50,3 +50,17 @@
 		</div>
 	</div>
 </section>
+
+<section id="slider" class="boxed-slider">
+	<div class="container clearfix">
+		<%= render "shared/error_messages" %>
+		
+		<div class="home-page-title">
+			<h1>EXXPERIENCE</h1>
+			<%= link_to "ELYXX", arts_path, class: "button button-rounded height-100 card" %>
+		</div>
+	</div>
+</section>
+<section id="content" style="margin-bottom: 0px;">
+	<br /><br /><br /><br /><br />
+</section>
